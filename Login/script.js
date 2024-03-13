@@ -5,11 +5,11 @@ function login(){
     if(name && password && name === "admin" && password === "admin"){
         const user = {
             name,
-            entryDate : new Date(), 
+            entryDate : format(new Date()), 
             id: Math.floor(Math.random()  * 100000),
         }
         localStorage.setItem("user", JSON.stringify(user))
-        window.location.href = "#";
+        window.location.href = "../Store";
        
     }
     else{
@@ -40,5 +40,7 @@ function format(item){
         day: "numeric",
         hour: "numeric",
         minute: "numeric",
+        second: "numeric",
     }
+    return item.toLocaleString("pt-BR", options)
 }

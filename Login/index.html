@@ -11,15 +11,21 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Login</h1>
-        <input type="text" placeholder="Username" id="user">
-        <div style="position: relative;">
-            <input type="password" placeholder="Password" id="password" >
-            <div onclick="showPassword()" class="key">🔑</div>
+    <main>
+        
+        <div class="wrap-image">
+            <img src= "../Images/perfume.png" alt="foto1" width="215px" height="auto">
         </div>
-        <button onclick="login()">Login</button>
-    </div>
+        <div class="container">
+            <h1>Login</h1>
+            <input type="text" placeholder="Username" id="user">
+            <div style="position: relative;">
+                <input type="password" placeholder="Password" id="password" >
+                <div onclick="showPassword()" class="key">🔑</div>
+            </div>
+            <button onclick="login()">Login</button>
+        </div>
+    </main>
     
     <div class="error-div" id="error-modal">
         <h3>Invalid Login</h3>
